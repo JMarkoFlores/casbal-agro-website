@@ -40,7 +40,7 @@
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div class="flex items-center space-x-2">
-            <img src="casbal.jpg" alt="Casbal Agro Logo" />
+            <img src="img/casbal.jpg" alt="Casbal Agro Logo" />
             <!-- <span class="text-2xl font-bold text-primary">Casbal Agro</span> -->
           </div>
 
@@ -59,16 +59,16 @@
               >Nosotros</a
             >
             <a
+              href="#valores"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-testimonials"
+              >Valores</a
+            >
+            <a
               href="#servicios"
               class="hover:text-primary transition-colors"
               data-translate="nav-services"
               >Servicios</a
-            >
-            <a
-              href="#testimonios"
-              class="hover:text-primary transition-colors"
-              data-translate="nav-testimonials"
-              >Testimonios</a
             >
             <a
               href="#contacto"
@@ -145,7 +145,7 @@
       </nav>
     </header>
 
-    <!-- Hero Section with Carousel -->
+    <!-- Carusel -->
     <section id="inicio" class="relative h-screen overflow-hidden mt-16">
       <div id="carousel" class="relative h-full">
         <!-- Slide 1 -->
@@ -154,7 +154,7 @@
         >
           <!-- /placeholder.svg?height=800&width=1200 -->
           <img
-            src="paltas.jpg"
+            src="img/paltas.jpg"
             alt="Plantación de Paltas"
             class="w-full h-full object-cover opacity-50"
           />
@@ -187,7 +187,7 @@
           class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-700 to-green-900 opacity-0"
         >
           <img
-            src="paltas2.jpg"
+            src="img/paltas2.jpg"
             alt="Control de Calidad"
             class="w-full h-full object-cover opacity-50"
           />
@@ -220,7 +220,7 @@
           class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-800 to-green-900 opacity-0"
         >
           <img
-            src="plantasdepalta.jpg"
+            src="img/plantasdepalta.jpg"
             alt="Exportación Internacional"
             class="w-full h-full object-cover opacity-50"
           />
@@ -268,8 +268,8 @@
       </div>
     </section>
 
-    <!-- Quiénes Somos -->
-    <section id="nosotros" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <!-- Quiénes Somos bg-gray-50-->
+    <section id="nosotros" class="py-20 dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="about-title">
@@ -292,7 +292,7 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="fachada2.jpg"
+              src="img/fachada2.jpg"
               alt="Instalaciones Casbal Agro"
               class="rounded-lg shadow-lg"
             />
@@ -352,8 +352,8 @@
     </section>
 
     <!-- Nuestros Valores -->
-     <!-- style="background-image: url('ep_naturalwhite.png') -->
-    <section class="py-20" ">
+    <!-- style="background-image: url('ep_naturalwhite.png') -->
+    <section class="py-20 dark:bg-gray-900 bg-[#e2853c]" id="valores">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="values-title">
@@ -493,8 +493,8 @@
       </div>
     </section>
 
-    <!-- Por Qué Elegir Casbal Agro -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+    <!-- Por Qué Elegir Casbal Agro bg-gray-50-->
+    <section class="py-20 dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="why-title">
@@ -575,14 +575,13 @@
     </section>
 
     <!-- Nuestros Servicios -->
-    <section
-      id="servicios"
-      class="py-20"
-      
-    >
+    <section id="servicios" class="py-20 bg-[#3e5e29] dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4" data-translate="services-title">
+          <h2
+            class="text-4xl font-bold mb-4 text-[#fff]"
+            data-translate="services-title"
+          >
             Nuestros Servicios
           </h2>
         </div>
@@ -673,7 +672,7 @@
     </section>
 
     <!-- Nuestro Diferencial -->
-    <section class="py-20 text-white">
+    <section class="py-20 dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2
@@ -728,7 +727,7 @@
     </section>
 
     <!-- Mercado y Clientes -->
-    <section class="py-20">
+    <section class="py-20 bg-[#f7bf4d] dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="market-title">
@@ -766,8 +765,10 @@
           <div
             class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
           >
-            <div class="text-4xl mb-4">🇯🇵</div>
-            <h3 class="font-bold" data-translate="market-japan">Japón</h3>
+            <div class="text-3xl mb-4">AL</div>
+            <h3 class="font-bold" data-translate="market-latam">
+              América latina
+            </h3>
           </div>
         </div>
       </div>
@@ -863,7 +864,7 @@
     </section> -->
 
     <!-- Contacto -->
-    <section id="contacto" class="py-20">
+    <section id="contacto" class="py-20 dark:bg-gray-800">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="contact-title">
@@ -891,11 +892,11 @@
               </div>
               <div class="flex items-center">
                 <i class="fas fa-phone text-primary text-xl w-8"></i>
-                <span>+51 999 888 777</span>
+                <span>+51 941 198 633</span>
               </div>
               <div class="flex items-center">
                 <i class="fas fa-envelope text-primary text-xl w-8"></i>
-                <span>info@casbalagro.com</span>
+                <span>contacto@casbalagro.com</span>
               </div>
             </div>
 
@@ -908,20 +909,24 @@
               </h4>
               <div class="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/casbal-agro-trade/posts/?feedView=all"
                   class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                  target="_blank"
                 >
                   <i class="fab fa-linkedin"></i>
                 </a>
+
                 <a
-                  href="#"
+                  href="https://www.instagram.com/casbal_agro/?igsh=MXFyYXdlMm1kZnI5dw%3D%3D&utm_source=qr#"
                   class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                  target="_blank"
                 >
-                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://api.whatsapp.com/send?phone=51941198633&text=Hola%2C%20estoy%20interesado%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20exportaciones%20de%20palta%20que%20ofrecen.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%2C%20por%20favor%3F"
                   class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                  target="_blank"
                 >
                   <i class="fab fa-whatsapp"></i>
                 </a>
@@ -991,10 +996,12 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <img src="casbal.jpg" alt="Casbal Agro Logo" />
+            <div
+              class="flex items-center space-x-2 mb-4 md:items-start flex-col"
+            >
+              <img src="img/casbal.jpg" alt="Casbal Agro Logo" />
               <!-- <span class="text-xl font-bold text-primary">Casbal Agro</span> -->
             </div>
             <p class="text-gray-400" data-translate="footer-desc">
@@ -1024,7 +1031,7 @@
               <li data-translate="market-usa">Estados Unidos</li>
               <li data-translate="market-europe">Europa</li>
               <li data-translate="market-china">China</li>
-              <li data-translate="market-japan">Japón</li>
+              <li data-translate="market-latam">América Latina</li>
             </ul>
           </div>
 
@@ -1034,8 +1041,8 @@
             </h4>
             <ul class="space-y-2 text-gray-400">
               <li>Lima, Perú</li>
-              <li>+51 999 888 777</li>
-              <li>info@casbalagro.com</li>
+              <li>+51 941 198 633</li>
+              <li>contacto@casbalagro.com</li>
             </ul>
           </div>
         </div>
@@ -1053,9 +1060,9 @@
       </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- Botón WhatsApp -->
     <a
-      href="https://wa.me/51999888777"
+      href="https://api.whatsapp.com/send?phone=51941198633&text=Hola%2C%20estoy%20interesado%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20exportaciones%20de%20palta%20que%20ofrecen.%20%C2%BFPodr%C3%ADan%20brindarme%20detalles%2C%20por%20favor%3F"
       target="_blank"
       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-50"
     >
