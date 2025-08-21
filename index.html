@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casbal Agro</title>
+    <meta
+      name="description"
+      content="Casbal Agro - Empresa peruana líder en exportación de palta Hass premium con 23% de materia seca, sin plagas y máxima calidad."
+    />
+    <link rel="icon" href="casbal.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#22c55e",
+              secondary: "#16a34a",
+              accent: "#15803d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
+  >
+    <!-- Header -->
+    <header
+      class="bg-white dark:bg-gray-800 shadow-lg fixed w-full top-0 z-50 transition-colors duration-300"
+    >
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <img src="casbal.jpg" alt="Casbal Agro Logo" />
+            <!-- <span class="text-2xl font-bold text-primary">Casbal Agro</span> -->
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#inicio"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-home"
+              >Inicio</a
+            >
+            <a
+              href="#nosotros"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-about"
+              >Nosotros</a
+            >
+            <a
+              href="#servicios"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-services"
+              >Servicios</a
+            >
+            <a
+              href="#testimonios"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-testimonials"
+              >Testimonios</a
+            >
+            <a
+              href="#contacto"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-contact"
+              >Contacto</a
+            >
+          </div>
+
+          <!-- Language Selector, Dark Mode Toggle, Mobile Menu -->
+          <div class="flex items-center space-x-4">
+            <!-- Language Selector -->
+            <select
+              id="languageSelector"
+              class="bg-transparent border border-gray-300 dark:border-gray-600 rounded px-2 py-1 text-sm"
+            >
+              <option value="es">🇪🇸 ES</option>
+              <option value="pt">🇧🇷 PT</option>
+              <option value="en">🇺🇸 EN</option>
+              <option value="zh">🇨🇳 中文</option>
+            </select>
+
+            <!-- Dark Mode Toggle -->
+            <button
+              id="darkModeToggle"
+              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            >
+              <i class="fas fa-moon dark:hidden"></i>
+              <i class="fas fa-sun hidden dark:block"></i>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuToggle" class="md:hidden p-2">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-4">
+            <a
+              href="#inicio"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-home"
+              >Inicio</a
+            >
+            <a
+              href="#nosotros"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-about"
+              >Nosotros</a
+            >
+            <a
+              href="#servicios"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-services"
+              >Servicios</a
+            >
+            <a
+              href="#testimonios"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-testimonials"
+              >Testimonios</a
+            >
+            <a
+              href="#contacto"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-contact"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="inicio" class="relative h-screen overflow-hidden mt-16">
+      <div id="carousel" class="relative h-full">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-600 to-green-800"
+        >
+          <!-- /placeholder.svg?height=800&width=1200 -->
+          <img
+            src="paltas.jpg"
+            alt="Plantación de Paltas"
+            class="w-full h-full object-cover opacity-50"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h1
+                class="text-5xl md:text-7xl font-bold mb-6"
+                data-translate="hero-title"
+              >
+                Palta Hass Premium
+              </h1>
+              <p
+                class="text-xl md:text-2xl mb-8"
+                data-translate="hero-subtitle"
+              >
+                Exportadores peruanos de calidad mundial
+              </p>
+              <button
+                class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+                data-translate="hero-cta"
+              >
+                Conoce Más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-700 to-green-900 opacity-0"
+        >
+          <img
+            src="paltas2.jpg"
+            alt="Control de Calidad"
+            class="w-full h-full object-cover opacity-50"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h1
+                class="text-5xl md:text-7xl font-bold mb-6"
+                data-translate="hero-quality"
+              >
+                23% Materia Seca
+              </h1>
+              <p
+                class="text-xl md:text-2xl mb-8"
+                data-translate="hero-quality-desc"
+              >
+                Garantía de calidad superior
+              </p>
+              <button
+                class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+                data-translate="hero-cta"
+              >
+                Conoce Más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-800 to-green-900 opacity-0"
+        >
+          <img
+            src="plantasdepalta.jpg"
+            alt="Exportación Internacional"
+            class="w-full h-full object-cover opacity-50"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+              <h1
+                class="text-5xl md:text-7xl font-bold mb-6"
+                data-translate="hero-export"
+              >
+                Exportación Global
+              </h1>
+              <p
+                class="text-xl md:text-2xl mb-8"
+                data-translate="hero-export-desc"
+              >
+                Llegamos a mercados internacionales
+              </p>
+              <button
+                class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+                data-translate="hero-cta"
+              >
+                Conoce Más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2"
+      >
+        <button
+          class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition-opacity"
+          data-slide="0"
+        ></button>
+        <button
+          class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition-opacity"
+          data-slide="1"
+        ></button>
+        <button
+          class="carousel-dot w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition-opacity"
+          data-slide="2"
+        ></button>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="nosotros" class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="about-title">
+            ¿Quiénes Somos?
+          </h2>
+          <p
+            class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            data-translate="about-desc"
+          >
+            <!-- Casbal Agro es una empresa peruana líder en la exportación de palta
+            Hass premium, comprometida con la excelencia y la calidad en cada
+            etapa del proceso. -->
+            Casbal Agro Trade SAC es una empresa peruana especializada en la
+            exportación de frutos frescos de alta calidad, con sede en Perú.
+            Operamos con un firme compromiso hacia la excelencia, la
+            sostenibilidad y la expansión global.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="fachada2.jpg"
+              alt="Instalaciones Casbal Agro"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-6" data-translate="about-mission">
+              Nuestra Misión
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 mb-6"
+              data-translate="about-mission-desc"
+            >
+              <!-- Ser el socio confiable para importadores internacionales que
+              buscan palta Hass de la más alta calidad, garantizando productos
+              con 23% de materia seca, libres de plagas y deformidades. -->
+              Brindar al mercado internacional productos agrícolas peruanos de
+              alta calidad, con especialización en la exportación de paltas, a
+              través de procesos sostenibles, eficientes y tecnológicamente
+              innovadores.
+            </p>
+
+            <h3 class="text-2xl font-bold mb-6" data-translate="about-mission">
+              Nuestra Visión
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 mb-6"
+              data-translate="about-mission-desc"
+            >
+              <!-- Ser el socio confiable para importadores internacionales que
+              buscan palta Hass de la más alta calidad, garantizando productos
+              con 23% de materia seca, libres de plagas y deformidades. -->
+              Ser una empresa agroexportadora líder en el mercado internacional,
+              reconocida por llevar al mundo productos agrícolas peruanos de
+              alta calidad, promoviendo prácticas sostenibles, fortaleciendo
+              relaciones comerciales duraderas y contribuyendo al desarrollo del
+              agro peruano en armonía con el medio ambiente.
+            </p>
+            <!-- <div class="grid grid-cols-2 gap-4">
+              <div
+                class="text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow"
+              >
+                <div class="text-3xl font-bold text-primary">23%</div>
+                <div class="text-sm" data-translate="about-dry-matter">
+                  Materia Seca
+                </div>
+              </div>
+              <div
+                class="text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow"
+              >
+                <div class="text-3xl font-bold text-primary">0%</div>
+                <div class="text-sm" data-translate="about-pests">Plagas</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+     <!-- style="background-image: url('ep_naturalwhite.png') -->
+    <section class="py-20" ">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="values-title">
+            Nuestros Valores
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-leaf text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4" data-translate="values-quality">
+              Calidad
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-quality-desc"
+            >
+              Compromiso inquebrantable con la excelencia en cada palta que
+              exportamos.
+            </p>
+          </div>
+
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-handshake text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4" data-translate="values-trust">
+              Confianza
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-trust-desc"
+            >
+              Construimos relaciones duraderas basadas en la transparencia y
+              cumplimiento.
+            </p>
+          </div>
+
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-globe text-white text-2xl"></i>
+            </div>
+            <h3
+              class="text-xl font-bold mb-4"
+              data-translate="values-innovation"
+            >
+              Innovación
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-innovation-desc"
+            >
+              Adoptamos las mejores prácticas y tecnologías para optimizar
+              nuestros procesos.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 pt-4">
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-leaf text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4" data-translate="values-quality">
+              Calidad
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-quality-desc"
+            >
+              Compromiso inquebrantable con la excelencia en cada palta que
+              exportamos.
+            </p>
+          </div>
+
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-handshake text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4" data-translate="values-trust">
+              Confianza
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-trust-desc"
+            >
+              Construimos relaciones duraderas basadas en la transparencia y
+              cumplimiento.
+            </p>
+          </div>
+
+          <div
+            class="text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-globe text-white text-2xl"></i>
+            </div>
+            <h3
+              class="text-xl font-bold mb-4"
+              data-translate="values-innovation"
+            >
+              Innovación
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="values-innovation-desc"
+            >
+              Adoptamos las mejores prácticas y tecnologías para optimizar
+              nuestros procesos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por Qué Elegir Casbal Agro -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="why-title">
+            ¿Por Qué Elegir Casbal Agro?
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-certificate text-white text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2" data-translate="why-certified">
+              Certificación
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm"
+              data-translate="why-certified-desc"
+            >
+              Cumplimos con todas las normativas internacionales
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-shipping-fast text-white text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2" data-translate="why-logistics">
+              Logística
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm"
+              data-translate="why-logistics-desc"
+            >
+              Entrega eficiente y puntual a destinos internacionales
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-microscope text-white text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2" data-translate="why-control">
+              Control
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm"
+              data-translate="why-control-desc"
+            >
+              Riguroso control de calidad en cada etapa
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-users text-white text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2" data-translate="why-experience">
+              Experiencia
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-300 text-sm"
+              data-translate="why-experience-desc"
+            >
+              Años de experiencia en el mercado internacional
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestros Servicios -->
+    <section
+      id="servicios"
+      class="py-20"
+      
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="services-title">
+            Nuestros Servicios
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-seedling text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold" data-translate="service-production">
+                Producción y Selección
+              </h3>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="service-production-desc"
+            >
+              Selección rigurosa de palta Hass con los más altos estándares de
+              calidad, garantizando 23% de materia seca y ausencia total de
+              plagas.
+            </p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-box text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold" data-translate="service-packaging">
+                Empaque y Logística
+              </h3>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="service-packaging-desc"
+            >
+              Empaque especializado y logística internacional eficiente para
+              mantener la frescura y calidad durante el transporte.
+            </p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-clipboard-check text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold" data-translate="service-quality">
+                Control de Calidad
+              </h3>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="service-quality-desc"
+            >
+              Supervisión exhaustiva en cada etapa del proceso para garantizar
+              productos libres de deformidades y con óptimas condiciones.
+            </p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-gavel text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold" data-translate="service-advisory">
+                Asesoría Fitosanitaria
+              </h3>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="service-advisory-desc"
+            >
+              Orientación especializada en normativas fitosanitarias y
+              regulaciones específicas de cada país de destino.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestro Diferencial -->
+    <section class="py-20 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl font-bold mb-4"
+            data-translate="differential-title"
+          >
+            Nuestro Diferencial
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-6xl font-bold mb-4">23%</div>
+            <h3
+              class="text-xl font-bold mb-2"
+              data-translate="differential-dry"
+            >
+              Materia Seca Garantizada
+            </h3>
+            <p data-translate="differential-dry-desc">
+              Superamos los estándares internacionales
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="text-6xl font-bold mb-4">0</div>
+            <h3
+              class="text-xl font-bold mb-2"
+              data-translate="differential-pests"
+            >
+              Plagas Detectadas
+            </h3>
+            <p data-translate="differential-pests-desc">
+              Proceso libre de contaminación
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="text-6xl font-bold mb-4">100%</div>
+            <h3
+              class="text-xl font-bold mb-2"
+              data-translate="differential-quality"
+            >
+              Calidad Premium
+            </h3>
+            <p data-translate="differential-quality-desc">
+              Sin deformidades ni defectos
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mercado y Clientes -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="market-title">
+            Mercado y Clientes
+          </h2>
+          <p
+            class="text-xl text-gray-600 dark:text-gray-300"
+            data-translate="market-desc"
+          >
+            Exportamos a los principales mercados internacionales
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div
+            class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="text-4xl mb-4">🇺🇸</div>
+            <h3 class="font-bold" data-translate="market-usa">
+              Estados Unidos
+            </h3>
+          </div>
+          <div
+            class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="text-4xl mb-4">🇪🇺</div>
+            <h3 class="font-bold" data-translate="market-europe">Europa</h3>
+          </div>
+          <div
+            class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="text-4xl mb-4">🇨🇳</div>
+            <h3 class="font-bold" data-translate="market-china">China</h3>
+          </div>
+          <div
+            class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="text-4xl mb-4">🇯🇵</div>
+            <h3 class="font-bold" data-translate="market-japan">Japón</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <!-- <section
+      id="testimonios"
+      class="py-20 bg-gray-50 dark:bg-gray-800"
+      style="background-image: url('ep_naturalwhite.png')"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl font-bold mb-4"
+            data-translate="testimonials-title"
+          >
+            Testimonios
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Cliente"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold">María González</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Importadora - España
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="testimonial-1"
+            >
+              "La calidad de las paltas de Casbal Agro es excepcional. Siempre
+              cumplen con los estándares prometidos."
+            </p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Cliente"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold">Chen Wei</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Distribuidor - China
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="testimonial-2"
+            >
+              "Excelente servicio y productos de primera calidad. Muy
+              recomendable para el mercado asiático."
+            </p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Cliente"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold">Sarah Johnson</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Compradora - USA
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 dark:text-gray-300"
+              data-translate="testimonial-3"
+            >
+              "Casbal Agro es nuestro proveedor confiable. Sus paltas siempre
+              llegan en perfectas condiciones."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4" data-translate="contact-title">
+            Contáctanos
+          </h2>
+          <p
+            class="text-xl text-gray-600 dark:text-gray-300"
+            data-translate="contact-desc"
+          >
+            Estamos listos para ser tu socio en la importación de palta Hass
+            premium
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-bold mb-6" data-translate="contact-info">
+              Información de Contacto
+            </h3>
+
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-primary text-xl w-8"></i>
+                <span>Lima, Perú</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone text-primary text-xl w-8"></i>
+                <span>+51 999 888 777</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope text-primary text-xl w-8"></i>
+                <span>info@casbalagro.com</span>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4
+                class="text-lg font-bold mb-4"
+                data-translate="contact-social"
+              >
+                Síguenos
+              </h4>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form class="space-y-6">
+              <div>
+                <label
+                  class="block text-sm font-medium mb-2"
+                  data-translate="contact-name"
+                  >Nombre</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium mb-2"
+                  data-translate="contact-email"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium mb-2"
+                  data-translate="contact-company"
+                  >Empresa</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium mb-2"
+                  data-translate="contact-message"
+                  >Mensaje</label
+                >
+                <textarea
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary hover:bg-secondary text-white py-3 rounded-lg font-semibold transition-colors"
+                data-translate="contact-send"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <img src="casbal.jpg" alt="Casbal Agro Logo" />
+              <!-- <span class="text-xl font-bold text-primary">Casbal Agro</span> -->
+            </div>
+            <p class="text-gray-400" data-translate="footer-desc">
+              Exportadores peruanos de palta Hass premium con calidad mundial.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4" data-translate="footer-services">
+              Servicios
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li data-translate="service-production">
+                Producción y Selección
+              </li>
+              <li data-translate="service-packaging">Empaque y Logística</li>
+              <li data-translate="service-quality">Control de Calidad</li>
+              <li data-translate="service-advisory">Asesoría Fitosanitaria</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4" data-translate="footer-markets">
+              Mercados
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li data-translate="market-usa">Estados Unidos</li>
+              <li data-translate="market-europe">Europa</li>
+              <li data-translate="market-china">China</li>
+              <li data-translate="market-japan">Japón</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4" data-translate="footer-contact">
+              Contacto
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>Lima, Perú</li>
+              <li>+51 999 888 777</li>
+              <li>info@casbalagro.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2024 Casbal Agro.
+            <span data-translate="footer-rights"
+              >Todos los derechos reservados.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/51999888777"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-50"
+    >
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+      // Translations
+      const translations = {
+        es: {
+          "nav-home": "Inicio",
+          "nav-about": "Nosotros",
+          "nav-services": "Servicios",
+          "nav-testimonials": "Testimonios",
+          "nav-contact": "Contacto",
+          "hero-title": "Palta Hass Premium",
+          "hero-subtitle": "Exportadores peruanos de calidad mundial",
+          "hero-quality": "23% Materia Seca",
+          "hero-quality-desc": "Garantía de calidad superior",
+          "hero-export": "Exportación Global",
+          "hero-export-desc": "Llegamos a mercados internacionales",
+          "hero-cta": "Conoce Más",
+          "about-title": "¿Quiénes Somos?",
+          "about-desc":
+            "Casbal Agro es una empresa peruana líder en la exportación de palta Hass premium, comprometida con la excelencia y la calidad en cada etapa del proceso.",
+          "about-mission": "Nuestra Misión",
+          "about-mission-desc":
+            "Ser el socio confiable para importadores internacionales que buscan palta Hass de la más alta calidad, garantizando productos con 23% de materia seca, libres de plagas y deformidades.",
+          "about-dry-matter": "Materia Seca",
+          "about-pests": "Plagas",
+          "values-title": "Nuestros Valores",
+          "values-quality": "Calidad",
+          "values-quality-desc":
+            "Compromiso inquebrantable con la excelencia en cada palta que exportamos.",
+          "values-trust": "Confianza",
+          "values-trust-desc":
+            "Construimos relaciones duraderas basadas en la transparencia y cumplimiento.",
+          "values-innovation": "Innovación",
+          "values-innovation-desc":
+            "Adoptamos las mejores prácticas y tecnologías para optimizar nuestros procesos.",
+          "why-title": "¿Por Qué Elegir Casbal Agro?",
+          "why-certified": "Certificación",
+          "why-certified-desc":
+            "Cumplimos con todas las normativas internacionales",
+          "why-logistics": "Logística",
+          "why-logistics-desc":
+            "Entrega eficiente y puntual a destinos internacionales",
+          "why-control": "Control",
+          "why-control-desc": "Riguroso control de calidad en cada etapa",
+          "why-experience": "Experiencia",
+          "why-experience-desc":
+            "Años de experiencia en el mercado internacional",
+          "services-title": "Nuestros Servicios",
+          "service-production": "Producción y Selección",
+          "service-production-desc":
+            "Selección rigurosa de palta Hass con los más altos estándares de calidad, garantizando 23% de materia seca y ausencia total de plagas.",
+          "service-packaging": "Empaque y Logística",
+          "service-packaging-desc":
+            "Empaque especializado y logística internacional eficiente para mantener la frescura y calidad durante el transporte.",
+          "service-quality": "Control de Calidad",
+          "service-quality-desc":
+            "Supervisión exhaustiva en cada etapa del proceso para garantizar productos libres de deformidades y con óptimas condiciones.",
+          "service-advisory": "Asesoría Fitosanitaria",
+          "service-advisory-desc":
+            "Orientación especializada en normativas fitosanitarias y regulaciones específicas de cada país de destino.",
+          "differential-title": "Nuestro Diferencial",
+          "differential-dry": "Materia Seca Garantizada",
+          "differential-dry-desc": "Superamos los estándares internacionales",
+          "differential-pests": "Plagas Detectadas",
+          "differential-pests-desc": "Proceso libre de contaminación",
+          "differential-quality": "Calidad Premium",
+          "differential-quality-desc": "Sin deformidades ni defectos",
+          "market-title": "Mercado y Clientes",
+          "market-desc":
+            "Exportamos a los principales mercados internacionales",
+          "market-usa": "Estados Unidos",
+          "market-europe": "Europa",
+          "market-china": "China",
+          "market-japan": "Japón",
+          "testimonials-title": "Testimonios",
+          "testimonial-1":
+            "La calidad de las paltas de Casbal Agro es excepcional. Siempre cumplen con los estándares prometidos.",
+          "testimonial-2":
+            "Excelente servicio y productos de primera calidad. Muy recomendable para el mercado asiático.",
+          "testimonial-3":
+            "Casbal Agro es nuestro proveedor confiable. Sus paltas siempre llegan en perfectas condiciones.",
+          "contact-title": "Contáctanos",
+          "contact-desc":
+            "Estamos listos para ser tu socio en la importación de palta Hass premium",
+          "contact-info": "Información de Contacto",
+          "contact-social": "Síguenos",
+          "contact-name": "Nombre",
+          "contact-email": "Email",
+          "contact-company": "Empresa",
+          "contact-message": "Mensaje",
+          "contact-send": "Enviar Mensaje",
+          "footer-desc":
+            "Exportadores peruanos de palta Hass premium con calidad mundial.",
+          "footer-services": "Servicios",
+          "footer-markets": "Mercados",
+          "footer-contact": "Contacto",
+          "footer-rights": "Todos los derechos reservados.",
+        },
+        en: {
+          "nav-home": "Home",
+          "nav-about": "About",
+          "nav-services": "Services",
+          "nav-testimonials": "Testimonials",
+          "nav-contact": "Contact",
+          "hero-title": "Premium Hass Avocado",
+          "hero-subtitle": "Peruvian exporters of world-class quality",
+          "hero-quality": "23% Dry Matter",
+          "hero-quality-desc": "Superior quality guarantee",
+          "hero-export": "Global Export",
+          "hero-export-desc": "We reach international markets",
+          "hero-cta": "Learn More",
+          "about-title": "Who We Are?",
+          "about-desc":
+            "Casbal Agro is a leading Peruvian company in premium Hass avocado export, committed to excellence and quality at every stage of the process.",
+          "about-mission": "Our Mission",
+          "about-mission-desc":
+            "To be the reliable partner for international importers seeking the highest quality Hass avocado, guaranteeing products with 23% dry matter, free from pests and deformities.",
+          "about-dry-matter": "Dry Matter",
+          "about-pests": "Pests",
+          "values-title": "Our Values",
+          "values-quality": "Quality",
+          "values-quality-desc":
+            "Unwavering commitment to excellence in every avocado we export.",
+          "values-trust": "Trust",
+          "values-trust-desc":
+            "We build lasting relationships based on transparency and compliance.",
+          "values-innovation": "Innovation",
+          "values-innovation-desc":
+            "We adopt best practices and technologies to optimize our processes.",
+          "why-title": "Why Choose Casbal Agro?",
+          "why-certified": "Certification",
+          "why-certified-desc": "We comply with all international standards",
+          "why-logistics": "Logistics",
+          "why-logistics-desc":
+            "Efficient and timely delivery to international destinations",
+          "why-control": "Control",
+          "why-control-desc": "Rigorous quality control at every stage",
+          "why-experience": "Experience",
+          "why-experience-desc":
+            "Years of experience in the international market",
+          "services-title": "Our Services",
+          "service-production": "Production and Selection",
+          "service-production-desc":
+            "Rigorous selection of Hass avocado with the highest quality standards, guaranteeing 23% dry matter and total absence of pests.",
+          "service-packaging": "Packaging and Logistics",
+          "service-packaging-desc":
+            "Specialized packaging and efficient international logistics to maintain freshness and quality during transport.",
+          "service-quality": "Quality Control",
+          "service-quality-desc":
+            "Exhaustive supervision at every stage of the process to guarantee products free from deformities and in optimal conditions.",
+          "service-advisory": "Phytosanitary Advisory",
+          "service-advisory-desc":
+            "Specialized guidance on phytosanitary regulations and specific regulations for each destination country.",
+          "differential-title": "Our Differential",
+          "differential-dry": "Guaranteed Dry Matter",
+          "differential-dry-desc": "We exceed international standards",
+          "differential-pests": "Detected Pests",
+          "differential-pests-desc": "Contamination-free process",
+          "differential-quality": "Premium Quality",
+          "differential-quality-desc": "No deformities or defects",
+          "market-title": "Market and Clients",
+          "market-desc": "We export to major international markets",
+          "market-usa": "United States",
+          "market-europe": "Europe",
+          "market-china": "China",
+          "market-japan": "Japan",
+          "testimonials-title": "Testimonials",
+          "testimonial-1":
+            "The quality of Casbal Agro avocados is exceptional. They always meet the promised standards.",
+          "testimonial-2":
+            "Excellent service and first-class products. Highly recommended for the Asian market.",
+          "testimonial-3":
+            "Casbal Agro is our reliable supplier. Their avocados always arrive in perfect condition.",
+          "contact-title": "Contact Us",
+          "contact-desc":
+            "We are ready to be your partner in importing premium Hass avocado",
+          "contact-info": "Contact Information",
+          "contact-social": "Follow Us",
+          "contact-name": "Name",
+          "contact-email": "Email",
+          "contact-company": "Company",
+          "contact-message": "Message",
+          "contact-send": "Send Message",
+          "footer-desc":
+            "Peruvian exporters of premium Hass avocado with world-class quality.",
+          "footer-services": "Services",
+          "footer-markets": "Markets",
+          "footer-contact": "Contact",
+          "footer-rights": "All rights reserved.",
+        },
+        pt: {
+          "nav-home": "Início",
+          "nav-about": "Sobre Nós",
+          "nav-services": "Serviços",
+          "nav-testimonials": "Depoimentos",
+          "nav-contact": "Contato",
+          "hero-title": "Abacate Hass Premium",
+          "hero-subtitle": "Exportadores peruanos de qualidade mundial",
+          "hero-quality": "23% Matéria Seca",
+          "hero-quality-desc": "Garantia de qualidade superior",
+          "hero-export": "Exportação Global",
+          "hero-export-desc": "Chegamos aos mercados internacionais",
+          "hero-cta": "Saiba Mais",
+          "about-title": "Quem Somos?",
+          "about-desc":
+            "Casbal Agro é uma empresa peruana líder na exportação de abacate Hass premium, comprometida com a excelência e qualidade em cada etapa do processo.",
+          "about-mission": "Nossa Missão",
+          "about-mission-desc":
+            "Ser o parceiro confiável para importadores internacionais que buscam abacate Hass da mais alta qualidade, garantindo produtos com 23% de matéria seca, livres de pragas e deformidades.",
+          "about-dry-matter": "Matéria Seca",
+          "about-pests": "Pragas",
+          "values-title": "Nossos Valores",
+          "values-quality": "Qualidade",
+          "values-quality-desc":
+            "Compromisso inabalável com a excelência em cada abacate que exportamos.",
+          "values-trust": "Confiança",
+          "values-trust-desc":
+            "Construímos relacionamentos duradouros baseados na transparência e cumprimento.",
+          "values-innovation": "Inovação",
+          "values-innovation-desc":
+            "Adotamos as melhores práticas e tecnologias para otimizar nossos processos.",
+          "why-title": "Por Que Escolher Casbal Agro?",
+          "why-certified": "Certificação",
+          "why-certified-desc": "Cumprimos com todas as normas internacionais",
+          "why-logistics": "Logística",
+          "why-logistics-desc":
+            "Entrega eficiente e pontual para destinos internacionais",
+          "why-control": "Controle",
+          "why-control-desc": "Rigoroso controle de qualidade em cada etapa",
+          "why-experience": "Experiência",
+          "why-experience-desc": "Anos de experiência no mercado internacional",
+          "services-title": "Nossos Serviços",
+          "service-production": "Produção e Seleção",
+          "service-production-desc":
+            "Seleção rigorosa de abacate Hass com os mais altos padrões de qualidade, garantindo 23% de matéria seca e ausência total de pragas.",
+          "service-packaging": "Embalagem e Logística",
+          "service-packaging-desc":
+            "Embalagem especializada e logística internacional eficiente para manter o frescor e qualidade durante o transporte.",
+          "service-quality": "Controle de Qualidade",
+          "service-quality-desc":
+            "Supervisão exaustiva em cada etapa do processo para garantir produtos livres de deformidades e em ótimas condições.",
+          "service-advisory": "Assessoria Fitossanitária",
+          "service-advisory-desc":
+            "Orientação especializada em normas fitossanitárias e regulamentações específicas de cada país de destino.",
+          "differential-title": "Nosso Diferencial",
+          "differential-dry": "Matéria Seca Garantida",
+          "differential-dry-desc": "Superamos os padrões internacionais",
+          "differential-pests": "Pragas Detectadas",
+          "differential-pests-desc": "Processo livre de contaminação",
+          "differential-quality": "Qualidade Premium",
+          "differential-quality-desc": "Sem deformidades ou defeitos",
+          "market-title": "Mercado e Clientes",
+          "market-desc":
+            "Exportamos para os principais mercados internacionais",
+          "market-usa": "Estados Unidos",
+          "market-europe": "Europa",
+          "market-china": "China",
+          "market-japan": "Japão",
+          "testimonials-title": "Depoimentos",
+          "testimonial-1":
+            "A qualidade dos abacates da Casbal Agro é excepcional. Sempre cumprem com os padrões prometidos.",
+          "testimonial-2":
+            "Excelente serviço e produtos de primeira classe. Altamente recomendado para o mercado asiático.",
+          "testimonial-3":
+            "Casbal Agro é nosso fornecedor confiável. Seus abacates sempre chegam em perfeitas condições.",
+          "contact-title": "Entre em Contato",
+          "contact-desc":
+            "Estamos prontos para ser seu parceiro na importação de abacate Hass premium",
+          "contact-info": "Informações de Contato",
+          "contact-social": "Siga-nos",
+          "contact-name": "Nome",
+          "contact-email": "Email",
+          "contact-company": "Empresa",
+          "contact-message": "Mensagem",
+          "contact-send": "Enviar Mensagem",
+          "footer-desc":
+            "Exportadores peruanos de abacate Hass premium com qualidade mundial.",
+          "footer-services": "Serviços",
+          "footer-markets": "Mercados",
+          "footer-contact": "Contato",
+          "footer-rights": "Todos os direitos reservados.",
+        },
+        zh: {
+          "nav-home": "首页",
+          "nav-about": "关于我们",
+          "nav-services": "服务",
+          "nav-testimonials": "客户评价",
+          "nav-contact": "联系我们",
+          "hero-title": "优质哈斯牛油果",
+          "hero-subtitle": "世界级品质的秘鲁出口商",
+          "hero-quality": "23% 干物质",
+          "hero-quality-desc": "卓越品质保证",
+          "hero-export": "全球出口",
+          "hero-export-desc": "我们覆盖国际市场",
+          "hero-cta": "了解更多",
+          "about-title": "我们是谁？",
+          "about-desc":
+            "Casbal Agro是秘鲁领先的优质哈斯牛油果出口公司，致力于在流程的每个阶段追求卓越和品质。",
+          "about-mission": "我们的使命",
+          "about-mission-desc":
+            "成为寻求最高品质哈斯牛油果的国际进口商的可靠合作伙伴，保证产品含有23%干物质，无病虫害和畸形。",
+          "about-dry-matter": "干物质",
+          "about-pests": "病虫害",
+          "values-title": "我们的价值观",
+          "values-quality": "品质",
+          "values-quality-desc": "对我们出口的每个牛油果都有不懈的卓越承诺。",
+          "values-trust": "信任",
+          "values-trust-desc": "我们基于透明度和合规性建立持久的关系。",
+          "values-innovation": "创新",
+          "values-innovation-desc": "我们采用最佳实践和技术来优化我们的流程。",
+          "why-title": "为什么选择Casbal Agro？",
+          "why-certified": "认证",
+          "why-certified-desc": "我们符合所有国际标准",
+          "why-logistics": "物流",
+          "why-logistics-desc": "高效准时地交付到国际目的地",
+          "why-control": "控制",
+          "why-control-desc": "每个阶段的严格质量控制",
+          "why-experience": "经验",
+          "why-experience-desc": "在国际市场的多年经验",
+          "services-title": "我们的服务",
+          "service-production": "生产和选择",
+          "service-production-desc":
+            "严格选择哈斯牛油果，采用最高质量标准，保证23%干物质和完全无病虫害。",
+          "service-packaging": "包装和物流",
+          "service-packaging-desc":
+            "专业包装和高效的国际物流，在运输过程中保持新鲜度和品质。",
+          "service-quality": "质量控制",
+          "service-quality-desc":
+            "在流程的每个阶段进行详尽监督，以保证产品无畸形且处于最佳状态。",
+          "service-advisory": "植物检疫咨询",
+          "service-advisory-desc":
+            "在植物检疫法规和每个目的地国家的具体规定方面提供专业指导。",
+          "differential-title": "我们的差异化",
+          "differential-dry": "保证干物质",
+          "differential-dry-desc": "我们超越国际标准",
+          "differential-pests": "检测到的病虫害",
+          "differential-pests-desc": "无污染过程",
+          "differential-quality": "优质品质",
+          "differential-quality-desc": "无畸形或缺陷",
+          "market-title": "市场和客户",
+          "market-desc": "我们出口到主要国际市场",
+          "market-usa": "美国",
+          "market-europe": "欧洲",
+          "market-china": "中国",
+          "market-japan": "日本",
+          "testimonials-title": "客户评价",
+          "testimonial-1":
+            "Casbal Agro牛油果的品质非常出色。他们总是达到承诺的标准。",
+          "testimonial-2": "优秀的服务和一流的产品。强烈推荐给亚洲市场。",
+          "testimonial-3":
+            "Casbal Agro是我们可靠的供应商。他们的牛油果总是以完美的状态到达。",
+          "contact-title": "联系我们",
+          "contact-desc": "我们准备成为您进口优质哈斯牛油果的合作伙伴",
+          "contact-info": "联系信息",
+          "contact-social": "关注我们",
+          "contact-name": "姓名",
+          "contact-email": "邮箱",
+          "contact-company": "公司",
+          "contact-message": "消息",
+          "contact-send": "发送消息",
+          "footer-desc": "世界级品质的秘鲁优质哈斯牛油果出口商。",
+          "footer-services": "服务",
+          "footer-markets": "市场",
+          "footer-contact": "联系",
+          "footer-rights": "版权所有。",
+        },
+      };
+
+      // Language functionality
+      function changeLanguage(lang) {
+        const elements = document.querySelectorAll("[data-translate]");
+        elements.forEach((element) => {
+          const key = element.getAttribute("data-translate");
+          if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+        document.documentElement.lang = lang;
+      }
+
+      // Dark mode functionality
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem(
+          "darkMode",
+          document.documentElement.classList.contains("dark")
+        );
+      }
+
+      // Carousel functionality
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? "1" : "0";
+        });
+        dots.forEach((dot, i) => {
+          dot.style.opacity = i === index ? "1" : "0.5";
+        });
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Mobile menu functionality
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set initial slide
+        showSlide(0);
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 5000);
+
+        // Event listeners
+        document
+          .getElementById("languageSelector")
+          .addEventListener("change", function (e) {
+            changeLanguage(e.target.value);
+          });
+
+        document
+          .getElementById("darkModeToggle")
+          .addEventListener("click", toggleDarkMode);
+        document
+          .getElementById("mobileMenuToggle")
+          .addEventListener("click", toggleMobileMenu);
+
+        // Carousel dots
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => showSlide(index));
+        });
+
+        // Load saved dark mode preference
+        if (localStorage.getItem("darkMode") === "true") {
+          document.documentElement.classList.add("dark");
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+            // Close mobile menu if open
+            document.getElementById("mobileMenu").classList.add("hidden");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
