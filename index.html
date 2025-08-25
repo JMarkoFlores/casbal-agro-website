@@ -123,16 +123,16 @@
               >Nosotros</a
             >
             <a
+              href="#valores"
+              class="hover:text-primary transition-colors"
+              data-translate="nav-testimonials"
+              >Valores</a
+            >
+            <a
               href="#servicios"
               class="hover:text-primary transition-colors"
               data-translate="nav-services"
               >Servicios</a
-            >
-            <a
-              href="#testimonios"
-              class="hover:text-primary transition-colors"
-              data-translate="nav-testimonials"
-              >Testimonios</a
             >
             <a
               href="#contacto"
@@ -145,14 +145,15 @@
       </nav>
     </header>
 
-    <!-- Carusel -->
+    <!-- Carusel: class="relative h-screen overflow-hidden mt-16"-->
     <section id="inicio" class="relative h-screen overflow-hidden mt-16">
       <div id="carousel" class="relative h-full">
         <!-- Slide 1 -->
         <div
           class="carousel-slide absolute inset-0 bg-gradient-to-r from-green-600 to-green-800"
         >
-          <!-- /placeholder.svg?height=800&width=1200 -->
+          <!-- /placeholder.svg?height=800&width=1200 
+          class="w-full h-full object-cover opacity-50"-->
           <img
             src="img/paltas.jpg"
             alt="Plantación de Paltas"
@@ -208,6 +209,7 @@
               <button
                 class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
                 data-translate="hero-cta"
+                id="#nosotros"
               >
                 Conoce Más
               </button>
@@ -309,16 +311,16 @@
               buscan palta Hass de la más alta calidad, garantizando productos
               con 23% de materia seca, libres de plagas y deformidades. -->
               Brindar al mercado internacional productos agrícolas peruanos de
-              alta calida a través de procesos sostenibles, eficientes y
+              alta calidad a través de procesos sostenibles, eficientes y
               tecnológicamente innovadores.
             </p>
 
-            <h3 class="text-2xl font-bold mb-6" data-translate="about-mission">
+            <h3 class="text-2xl font-bold mb-6" data-translate="about-vision">
               Nuestra Visión
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300 mb-6"
-              data-translate="about-mission-desc"
+              data-translate="about-vision-desc"
             >
               <!-- Ser el socio confiable para importadores internacionales que
               buscan palta Hass de la más alta calidad, garantizando productos
@@ -367,7 +369,7 @@
             <div
               class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
             >
-              <i class="fas fa-leaf text-white text-2xl"></i>
+              <i class="fas fa-star text-white text-2xl"></i>
             </div>
             <h3 class="text-xl font-bold mb-4" data-translate="values-quality">
               Calidad
@@ -388,14 +390,17 @@
             <div
               class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
             >
-              <i class="fas fa-handshake text-white text-2xl"></i>
+              <i class="fas fa-shield-alt text-white text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4" data-translate="values-trust">
+            <h3
+              class="text-xl font-bold mb-4"
+              data-translate="values-responsibility"
+            >
               Responsabilidad
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300"
-              data-translate="values-trust-desc"
+              data-translate="values-responsibility-desc"
             >
               Trabajamos en armonía con las comunidades locales, generando
               oportunidades de desarrollo y empleo digno.
@@ -408,17 +413,17 @@
             <div
               class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
             >
-              <i class="fas fa-globe text-white text-2xl"></i>
+              <i class="fas fa-leaf text-white text-2xl"></i>
             </div>
             <h3
               class="text-xl font-bold mb-4"
-              data-translate="values-innovation"
+              data-translate="values-sustainability"
             >
               Sostenibilidad
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300"
-              data-translate="values-innovation-desc"
+              data-translate="values-sustainability-desc"
             >
               Priorizamos prácticas agrícolas responsables, cuidando el medio
               ambiente y fomentando una producción respetuosa con los recursos
@@ -434,14 +439,17 @@
             <div
               class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
             >
-              <i class="fas fa-leaf text-white text-2xl"></i>
+              <i class="fas fa-lightbulb text-white text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4" data-translate="values-quality">
+            <h3
+              class="text-xl font-bold mb-4"
+              data-translate="values-innovation"
+            >
               Innovación
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300"
-              data-translate="values-quality-desc"
+              data-translate="values-innovation-desc"
             >
               Apostamos por la mejora continua, incorporando nuevas tecnologías
               y procesos que optimicen la cadena de valor.
@@ -456,12 +464,15 @@
             >
               <i class="fas fa-handshake text-white text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-4" data-translate="values-trust">
+            <h3
+              class="text-xl font-bold mb-4"
+              data-translate="values-commitment"
+            >
               Compromiso
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300"
-              data-translate="values-trust-desc"
+              data-translate="values-commitment-desc"
             >
               Cada operación se centra en satisfacer las necesidades de nuestros
               socios estratégicos en el mundo .
@@ -474,17 +485,17 @@
             <div
               class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"
             >
-              <i class="fas fa-globe text-white text-2xl"></i>
+              <i class="fas fa-eye text-white text-2xl"></i>
             </div>
             <h3
               class="text-xl font-bold mb-4"
-              data-translate="values-innovation"
+              data-translate="values-transparency"
             >
               Transparencia
             </h3>
             <p
               class="text-gray-600 dark:text-gray-300"
-              data-translate="values-innovation-desc"
+              data-translate="values-transparency-desc"
             >
               Construimos relaciones sólidas y duraderas con nuestros clientes y
               socios comerciales, basadas en la honestidad y la ética
@@ -496,7 +507,7 @@
     </section>
 
     <!-- Por Qué Elegir Casbal Agro bg-gray-50-->
-    <section class="py-20 dark:bg-gray-800">
+    <section class="py-20 dark:bg-gray-800" id="servicios">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="why-title">
@@ -687,7 +698,12 @@
 
         <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center">
-            <div class="text-6xl font-bold mb-4">Óptima</div>
+            <div
+              class="text-6xl font-bold mb-4"
+              data-translate="differential-part"
+            >
+              Óptima
+            </div>
             <h3
               class="text-xl font-bold mb-2"
               data-translate="differential-dry"
@@ -729,7 +745,7 @@
     </section>
 
     <!-- Mercado y Clientes -->
-    <section class="py-20 dark:bg-gray-900">
+    <!-- <section class="py-20 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-4" data-translate="market-title">
@@ -771,6 +787,271 @@
             <h3 class="font-bold" data-translate="market-latam">
               América latina
             </h3>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Mercado y Clientes -->
+    <section
+      class="py-12 sm:py-16 md:py-20 bg-gray-50 dark:bg-gray-900 relative overflow-hidden"
+    >
+      <!-- Elementos decorativos de fondo -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-40 h-40 bg-secondary rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10"
+      >
+        <!-- Título de la sección class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4"-->
+        <div class="text-center mb-12 sm:mb-14 md:mb-16">
+          <div class="inline-block mb-4 sm:mb-6">
+            <h2 class="text-4xl font-bold mb-4" data-translate="market-title">
+              Mercado y Clientes
+            </h2>
+            <div
+              class="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
+            ></div>
+          </div>
+          <p
+            class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            data-translate="market-desc"
+          >
+            Exportamos a los principales mercados internacionales
+          </p>
+        </div>
+
+        <!-- Grid  -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 md:mb-12"
+        >
+          <!-- Estados Unidos -->
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl p-4 sm:p-6 text-center transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="mb-4 sm:mb-6">
+              <!-- Contenedor de la bandera: src="https://flagcdn.com/w80/us.png" -->
+              <div
+                class="w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 mx-auto rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-gray-200 dark:border-gray-600"
+              >
+                <img
+                  src="img/EUA.png"
+                  alt="Bandera de Estados Unidos"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3
+              class="text-sm sm:text-base md:text-lg font-bold text-gray-800 dark:text-white leading-tight"
+              data-translate="market-usa"
+            >
+              Estados Unidos
+            </h3>
+            <div
+              class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <p
+                class="text-xs sm:text-sm text-gray-500 dark:text-gray-400"
+                data-translate="market-usa-desc"
+              >
+                Mercado Premium
+              </p>
+            </div>
+          </div>
+
+          <!-- Europa (usando bandera de la UE) https://flagcdn.com/w80/eu.png-->
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl p-4 sm:p-6 text-center transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="mb-4 sm:mb-6">
+              <!-- Contenedor de la bandera -->
+              <div
+                class="w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 mx-auto rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-gray-200 dark:border-gray-600"
+              >
+                <img
+                  src="img/europa.png"
+                  alt="Bandera de la Unión Europea"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3
+              class="text-sm sm:text-base md:text-lg font-bold text-gray-800 dark:text-white leading-tight"
+              data-translate="market-europe"
+            >
+              Europa
+            </h3>
+            <div
+              class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <p
+                class="text-xs sm:text-sm text-gray-500 dark:text-gray-400"
+                data-translate="market-europe-desc"
+              >
+                Mercado Diverso
+              </p>
+            </div>
+          </div>
+
+          <!-- China -->
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl p-4 sm:p-6 text-center transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="mb-4 sm:mb-6">
+              <!-- Contenedor de la bandera: https://flagcdn.com/w80/cn.png-->
+              <div
+                class="w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 mx-auto rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-gray-200 dark:border-gray-600"
+              >
+                <img
+                  src="https://flagcdn.com/w80/cn.png"
+                  alt="Bandera de China"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3
+              class="text-sm sm:text-base md:text-lg font-bold text-gray-800 dark:text-white leading-tight"
+              data-translate="market-china"
+            >
+              China
+            </h3>
+            <div
+              class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <p
+                class="text-xs sm:text-sm text-gray-500 dark:text-gray-400"
+                data-translate="market-china-desc"
+              >
+                Mercado Emergente
+              </p>
+            </div>
+          </div>
+
+          <!-- América Latina (usando bandera genérica o mosaico): https://flagcdn.com/w40/mx.png -->
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl p-4 sm:p-6 text-center transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+          >
+            <div class="mb-4 sm:mb-6">
+              <!-- Contenedor de mosaico de banderas latinoamericanas -->
+              <div
+                class="w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 mx-auto rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-gray-200 dark:border-gray-600"
+              >
+                <!-- Mosaico de 4 banderas principales de LATAM -->
+                <div class="grid grid-cols-2 h-full">
+                  <img
+                    src="https://flagcdn.com/w40/mx.png"
+                    alt="México"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <img
+                    src="https://flagcdn.com/w40/br.png"
+                    alt="Brasil"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <img
+                    src="https://flagcdn.com/w40/ar.png"
+                    alt="Argentina"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <img
+                    src="https://flagcdn.com/w40/cl.png"
+                    alt="Chile"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <h3
+              class="text-sm sm:text-base md:text-lg font-bold text-gray-800 dark:text-white leading-tight"
+              data-translate="market-latam"
+            >
+              América Latina
+            </h3>
+            <div
+              class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <p
+                class="text-xs sm:text-sm text-gray-500 dark:text-gray-400"
+                data-translate="market-latam-desc"
+              >
+                Mercado Regional
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estadísticas adicionales -->
+        <div
+          class="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-gray-700/50 dark:to-gray-600/50 rounded-2xl p-6 sm:p-8 backdrop-blur-sm border border-primary/20 dark:border-gray-600/30"
+        >
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center"
+          >
+            <div class="space-y-1 sm:space-y-2">
+              <div
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-white"
+              >
+                7+
+              </div>
+              <div
+                class="text-xs sm:text-sm text-gray-600 dark:text-gray-300"
+                data-translate="market-countries"
+              >
+                Países
+              </div>
+            </div>
+            <div class="space-y-1 sm:space-y-2">
+              <div
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-white"
+              >
+                500+
+              </div>
+              <div
+                class="text-xs sm:text-sm text-gray-600 dark:text-gray-300"
+                data-translate="market-containers"
+              >
+                Contenedores
+              </div>
+            </div>
+            <div class="space-y-1 sm:space-y-2">
+              <div
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-white"
+              >
+                98%
+              </div>
+              <div
+                class="text-xs sm:text-sm text-gray-600 dark:text-gray-300"
+                data-translate="market-satisfaction"
+              >
+                Satisfacción
+              </div>
+            </div>
+            <div class="space-y-1 sm:space-y-2">
+              <div
+                class="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-white"
+              >
+                24/7
+              </div>
+              <div
+                class="text-xs sm:text-sm text-gray-600 dark:text-gray-300"
+                data-translate="market-support"
+              >
+                Soporte
+              </div>
+            </div>
           </div>
         </div>
       </div>
